@@ -1,0 +1,421 @@
+html 
+{
+	box-sizing: border-box;
+}
+body,div,h1,h2,h3,h4,h5,p,a,img,ol,li,ul,form,header,footer,nav,section,div
+{
+    margin: 0;
+    padding: : 0;
+    border: 0;
+    font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+
+}
+
+article, aside, footer, header, nav, section 
+{
+	display: block;
+}
+
+ h2, h3, h4, h5 
+{
+	color: #444;
+	font-weight: 800;
+	font-family: Arial;
+}
+
+/*La tete de la page et la navigation*/
+header
+{
+	padding :30px;
+	text-align : left;
+	background: LightSeaGreen;
+	color : white;
+	display : flex;
+}
+
+header h1
+{
+	font-size: 40px;
+	flex-direction: column;
+	font-family: 'Brushed Script'  ;
+}
+
+.titre
+{
+	justify-content: space-between;
+	display: block;
+}
+
+.logo 
+{
+	float: left;
+	vertical-align: middle;
+	margin-right: 8px; 
+	display: block;
+}
+
+div#header
+{
+	display:flex;    
+    align-items:flex-start;
+}
+
+/*stylage de la navigation*/
+.nav
+{
+	padding : 15px;
+	background-color: Orange;
+	overflow: hidden;
+	box-shadow: 5px 2px 5px #1c1a19;
+    border-radius: 5px;
+}
+/*stylage des liens de la navigation*/
+.nav a
+{
+	float: left;
+	display: block;
+	color : white;
+	text-align: center;
+	padding: 5px 20px;
+	text-decoration: none; /* enlever le soulignage*/
+	font-family: Arial;
+}
+
+.nav a.right
+{
+	float: right;
+}
+.nav a:hover
+{
+	background-color: PowderBlue;
+	color : black;
+}
+
+/*le corps de la page web*/
+body
+{
+	line-height: 1;
+	font-family: "Gill Sans", sans-serif;
+	margin: auto;
+	background-color: HoneyDew;
+}
+
+
+section
+{
+	flex-wrap: wrap; /*permet le retour a la ligne*/
+	display: flex;
+	margin-bottom: 20px;
+}
+
+
+.main
+{
+	float: left;
+	flex: 75%;
+	background-color: White;
+	padding: 40px;
+	margin-top:15px;
+	margin-right: 20px;
+	margin-left: 20px;
+	text-align: justify;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.main h1
+{
+	text-align: left;
+	color:#444;
+	font-family: Arial;
+	font-weight: 900;
+	font-size: 30px;
+}
+
+.main h2
+{
+	font-size: 150%;
+}
+
+.main p
+{
+	font-size: 0.9em;
+	font-family: Verdana;
+}
+
+.main img
+{
+	margin-top: 15px;
+    height: 300px;
+    width: 1000px;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
+}
+
+.colonne
+{
+	float: left;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    width: 31%;
+}
+
+.carte
+{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	margin :10px;
+	text-align: center;
+}
+
+.titre
+{
+	padding: 30px;
+    text-align: left;
+    background-color: WhiteSmoke;
+    color: Grey;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.contenant
+{
+	padding : 20px 25px;
+	text-align: center;
+}
+
+.contenant:after , .row:after
+{
+	display: table;
+	content:"";
+	clear:both;
+}
+
+.button
+{
+	display: inline-block;
+	outline: 0;
+	border: none;
+	padding: 3px;
+	text-align: center;
+	cursor: pointer;
+	background-color: Gold;
+	outline: 0;
+	width: 100%;
+}
+
+.button:hover
+{
+	background-color: DarkOrange;
+}
+
+input[type=submit] 
+{
+  background-color: LightSeaGreen;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover 
+{
+  background-color: #45a049;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.contact 
+{
+  border-radius: 5px;
+  background-color: WhiteSmoke;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  margin: 20px;
+  float: center;
+}
+
+.colonne_contact 
+{
+  float: left;
+  width: 40%;
+  margin-top: 6px;
+  padding: 30px;
+}
+
+
+.ligne_contact:after
+{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+form 
+{
+  border: 3px solid WhiteSmoke;
+}
+
+input[type=text], input[type=password] {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 8px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.contact input[type=text], .contact input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 8px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+.contenant_log
+{
+  padding: 80px;
+  box-shadow: 0px 2px 5px #1c1a19;
+  border-radius: 5px;
+}
+
+.contenant1 
+{
+  padding: 30px;
+  box-shadow: 0px 2px 5px #1c1a19;
+  border-radius: 5px;
+}
+
+.contenant_log button, .contenant_inscri button
+{
+  background-color: LightSeaGreen;
+  color: white;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  /* width: 100%;*/
+}
+
+.contenant_log button:hover, .contenant_inscri button:hover
+{
+	opacity: 0.8;
+}
+
+.contenant_inscri
+{
+	padding : 30px 25px;
+	text-align: center;
+	box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.nomprenom
+{
+	padding: 20px;
+}
+
+.nomprenom input[type=text]
+{
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 8px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.prog
+{
+	padding: 30px;
+	margin: 20px;
+    text-align: left;
+    background-color: White;
+    color: Grey;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.cote
+{
+	font-family: Verdana;
+	float: right;
+	flex: 10;
+	background-color: Orange;
+	padding: 10px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-right: 5px;
+	box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    text-align: justify;
+    display: block;
+}
+
+.cote a
+{
+	text-decoration: none;
+	color: black;
+	display :block;
+}
+
+.cote a:hover
+{
+	background-color: PowderBlue;
+	color : black;
+}
+
+
+/* le pieds de la page web*/
+
+footer
+{
+	font-family: Verdana;
+	background-color: Orange;
+	padding: 20px 50px;
+	display : flex;
+	margin: 20px;
+	text-align: center;
+	justify-content: space-between;
+	box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+}
+
+.menu a	
+{
+	text-decoration: none;
+	display: block;
+	color : black;
+}
+
+.adresse
+{
+	display: block;
+}
+
+.social_media a
+{
+	text-decoration: none;
+	display: block;
+	color : black;
+}
+
+footer a:hover
+{
+	text-decoration: underline;
+	text-decoration-color: PowderBlue;
+}
+
+

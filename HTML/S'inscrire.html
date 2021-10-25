@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<HTML>
+
+<head>
+	<title>S'inscrire</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="feryel">
+	<link rel="stylesheet" href="club_robotique.css"/>
+
+</head>
+
+<body>
+	<header>
+		<div id="logo">
+			<a href="Acceuil.html">
+				<img src="C:\Users\HP\Desktop\2LBC\Prog web 2\img\copy_524495190.png" alt="logo_club_robotique_d'enfants" width="150" height="150" border="0"/>
+			</a>	
+		</div>
+
+		<div id="titre">
+			<br><br><br>
+			<h1>Club Robotique d'enfants</h1>
+		</div>
+	</header>
+
+	<div class="nav">
+		<b>
+		<a href="Acceuil.html">Acceuil</a>
+		<a href="Programmes.html">Programmes</a>
+		<a href="Contact.html">Contact</a>
+		<a href="A propos.html">A propos</a>
+		<a href="S'inscrire.html" class="right">S'inscrire</a>
+		<a href="Se connecter.html" class="right">Se connecter</a>
+		</b>
+	</div>
+
+	<section>
+		<div class="main">
+			<div class="titre">
+				<h1>S'inscrire</h1><br>
+			</div>
+
+			<form action="action_page.php" method="post">
+			  
+			  <div class="contenant_inscri">
+			 	<div class="nomprenom">		
+				  	<label for="nom"><b>Nom:</b></label>
+				   	<input type="text" placeholder="nom" name="nom" id="nom" required>
+
+				    <label for="prenom"><b>Prenom:</b></label>
+				   	<input type="text" placeholder="prenom" name="prenom" id="prenom" required>
+				   	<br><br>
+			   </div>
+			   
+			    <label for="email"><b>Email:</b></label>
+			    <input type="text" placeholder="exemple@gmail.com" name="email" id="email" required>
+ 				<br><br>
+
+			    <label for="psw"><b>Mot de passe:</b></label>
+			    <input type="password" placeholder="Entrez mot de passe" name="psw" id="psw" required>
+			    <br><br>
+
+			    <label for="psw2"><b>Repetez le mot de passe:</b></label>
+			    <input type="password" placeholder="Resaisir mot de passe" name="psw2" id="psw2" required>
+
+			    <br>
+			    <button type="submit">S'inscrire</button>
+			    
+			  </div>
+
+			  <div class="contenant1" style="background-color:#f1f1f1">
+			    <span class="psw">Avez-vous un compte existant? <a href="#">Se connecter</a></span>
+			  </div>
+
+			</form>
+		</div>
+
+		<div class="cote">
+			<h2>Articles</h2>
+				<a href="#">Article 1</a>
+				<br>
+				<a href="#">Article 2</a>
+				<br>
+				<a href="#">Article 3</a>
+				<br>
+			<h2>Calendrier</h2>
+				<label for="start"><u>Date:</u></label>
+				<br>
+				<input type="date" id="start" name="trip-start"value="2021-02-16" min="2018-01-01" max="2021-12-31">
+				<br>
+			<h2>Archives</h2>
+				<a href="#">Archive 1</a><br>
+				<a href="#">Archive 2</a><br>
+				<a href="#">Archive 3</a><br>
+				<a href="#">Archive 4</a><br>
+		</div>
+
+	</section>
+
+	<footer>
+
+		<div class="menu">
+			<h2>Menu</h2>
+			<a href="Acceuil.html">Acceuil</a>
+			<a href="Programmes.html">Programmes</a>
+			<a href="Contact.html">Contact</a>
+			<a href="A propos.html">A propos</a>
+			<a href="S'inscrire.html">S'inscrire</a>
+			<a href="Se connecter.html">Se connecter</a>
+		</div>
+
+		<div class="adresse">
+			<h2>Adresse</h2>
+			<p>58 Rue Taieb Mhiri, Hammam-lif<br>Ben Arous, 2050<br>+216 12 345 678</p>
+		</div>
+
+		<div class="social_media">
+			<h2>Réseaux Sociaux</h2>
+			<a href="#">Facebook</a>
+			<a href="#">Instagram</a>
+			<a href="#">Twitter</a>
+		</div>
+
+	</footer>
+
+</body>
+
+</HTML>
